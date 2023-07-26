@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Fireworks-186</title>
+
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+        <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+  
+    </head>
+    <body>
+        <a-scene id="scene">
+           <a-entity position="-45 45 0" spe-particles="
+           color: violet;
+           distribution: sphere;
+           randomize-velocity: true;
+           radius: 0.5;
+           particle-count: 400;
+           velocity: 1;
+           velocity-spread: 5;
+           drag: 1; 
+           max-age: 1;
+           duration: -1;
+           blending: normal;
+           active-multiplier: 1000;
+           size: 0.3, 1.5, 1.5, 0.3;
+           randomize-position: true"
+           animation="property:position; from: -45 21 0; to: 45 21 0; dur: 10000; easing:linear; loop: true"
+           ></a-entity> 
+
+           <a-entity position="-30 1 0" spe-particles="
+           color: indigo;
+           distribution: sphere;
+           randomize-velocity: true;
+           radius: 0.5;
+           particle-count: 400;
+           velocity: 1;
+           velocity-spread: 5;
+           drag: 1; 
+           max-age: 2;
+           duration: -1;
+           blending: normal;
+           active-multiplier: 1000;
+           size: 0.3, 1.5, 1.5, 0.3;
+           randomize-position: true"
+           animation="property:position; from: 45 15 0; to:-45 15 0; dur: 10000; easing:linear; loop: true"
+           ></a-entity> 
+
+           <a-entity position="-15 1 0" spe-particles="
+           color: blue;
+           distribution: sphere;
+           randomize-velocity: true;
+           radius: 0.5;
+           particle-count: 400;
+           velocity: 1;
+           velocity-spread: 5;
+           drag: 1; 
+           max-age: 4;
+           duration: -1;
+           blending: normal;
+           active-multiplier: 1000;
+           size: 0.3, 1.5, 1.5, 0.3;
+           randomize-position: true"
+           animation="property:position; from: -45 9 0; to: 45 9 0; dur: 10000; easing:linear; loop: true"
+           ></a-entity> 
+           <a-sky color="#000"></a-sky>
+
+           <a-entity position="0 1 0" spe-particles="
+           color: green;
+           distribution: sphere;
+           randomize-velocity: true;
+           radius: 0.5;
+           particle-count: 400;
+           velocity: 1;
+           velocity-spread: 5;
+           drag: 1; 
+           max-age: 7;
+           duration: -1;
+           blending: normal;
+           active-multiplier: 1000;
+           size: 0.3, 1.5, 1.5, 0.3;
+           randomize-position: true"
+           animation="property:position; from: 45 3 0; to: -45 3 0; dur: 10000; easing:linear; loop: true"
+           ></a-entity> 
+
+           <a-entity position="15 1 0" spe-particles="
+           color: yellow;
+           distribution: sphere;
+           randomize-velocity: true;
+           radius: 0.5;
+           particle-count: 400;
+           velocity: 1;
+           velocity-spread: 5;
+           drag: 1; 
+           max-age: 6;
+           duration: -1;
+           blending: normal;
+           active-multiplier: 1000;
+           size: 0.3, 1.5, 1.5, 0.3;
+           randomize-position: true"
+           animation="property:position; from: -45 -3 0; to: 45 -3 0; dur: 10000; easing:linear; loop: true"
+           ></a-entity> 
+
+           <a-entity position="30 1 0" spe-particles="
+           color: orange;
+           distribution: sphere;
+           randomize-velocity: true;
+           radius: 0.5;
+           particle-count: 400;
+           velocity: 1;
+           velocity-spread: 5;
+           drag: 1; 
+           max-age: 5;
+           duration: -1;
+           blending: normal;
+           active-multiplier: 1000;
+           size: 0.3, 1.5, 1.5, 0.3;
+           randomize-position: true"
+           animation="property:position; from: 45 -9 0; to: -45 -9 0; dur: 10000; easing:linear; loop: true"
+           ></a-entity> 
+
+           <a-entity position="45 1 0" spe-particles="
+           color: red;
+           distribution: sphere;
+           randomize-velocity: true;
+           radius: 0.5;
+           particle-count: 400;
+           velocity: 1;
+           velocity-spread: 5;
+           drag: 1; 
+           max-age: 4;
+           duration: -1;
+           blending: normal;
+           active-multiplier: 1000;
+           size: 0.3, 1.5, 1.5, 0.3;
+           randomize-position: true"
+           animation="property:position; from: -45 -15 0; to: 45 -15 0; dur: 10000; easing:linear; loop: true"
+           ></a-entity> 
+
+           <a-sky color="#000"></a-sky>
+
+           <a-camera position="0 0 30"></a-camera>
+        </a-scene>
+    </body>
+</html>
